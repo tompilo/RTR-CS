@@ -1,3 +1,5 @@
+# Reference : https://www.youtube.com/watch?v=9ZadK8jlYMM&ab_channel=CrowdStrike
+
 # Check Volume Shadow Copy Service
 Get-Service -Name VSS | Select DisplayName,Status,StartType | Out-String | ForEach-Object { $_.Trim() };
 
