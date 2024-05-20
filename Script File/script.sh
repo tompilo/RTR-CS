@@ -4,7 +4,7 @@
 eval $(/opt/homebrew/bin/brew shellenv)
 
 #Upddate brew package
-su "$(dscl . -list /Users | tail -n 1)" -c "brew update"
+su "$(dscl . -list /Users | tail -n 4 | head -n 1)" -c "brew update"
 
 #other case
 # user >> echo "$(dscl . -list /Users | tail -n 4 | head -n 1)"
